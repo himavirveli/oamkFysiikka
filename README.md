@@ -1,0 +1,2 @@
+# oamkFysiikka
+Soveltavan fysiikan projekti
