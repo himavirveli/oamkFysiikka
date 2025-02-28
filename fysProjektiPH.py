@@ -7,12 +7,13 @@ import matplotlib.pyplot as plt
 from scipy.signal import butter, filtfilt, find_peaks
 
 # Load location data
-path_location = "Location.csv"
-df_location = pd.read_csv(path_location)
+url_location = "https://github.com/himavirveli/oamkFysiikka/blob/main/Location.csv"
+df_location = pd.read_csv(url_location)
 
 # Load acceleration data
-path_kiihtyvyys = "kiihtyvyys.csv"
-df_kiihtyvyys = pd.read_csv(path_kiihtyvyys)
+url_kiihtyvyys = "https://github.com/himavirveli/oamkFysiikka/blob/main/kiihtyvyys.csv"
+df_kiihtyvyys = pd.read_csv(url_kiihtyvyys)
+
 
 # Function to define bandpass filter
 def butter_bandpass(lowcut, highcut, fs, order=4):
